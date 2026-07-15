@@ -3234,14 +3234,14 @@ input, select, textarea {
 			left: 0;
 			position: absolute;
 			top: 0;
-			width: 50vw;
+			width: 37.5vw;
 			z-index: -1;
 		}
 
 		#wrapper section {
 			display: grid;
 			grid-template-areas: "header content" "footer content";
-			grid-template-columns: 50vw 50vw;
+			grid-template-columns: 37.5vw 62.5vw;
 			grid-template-rows: 1fr;
 		}
 
@@ -3282,11 +3282,10 @@ input, select, textarea {
 				text-align: right;
 			}
 
-				#wrapper section > footer ul.actions {
-					justify-content: flex-end;
-				}
+		#wrapper > section:last-of-type > footer {
+			text-align: left;
+		}
 
-		#wrapper > section {
 			position: relative;
 		}
 

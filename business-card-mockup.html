@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smiths Detailing Business Card Mockup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;800&family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #111111;
+      --surface: #161616;
+      --surface-2: #1e1e1e;
+      --text: #f6f6f6;
+      --muted: #b3b3b3;
+      --accent: #d4af37;
+      --border: rgba(255, 255, 255, 0.08);
+      --shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(circle at top, #2b2b2b 0%, #111 60%);
+      color: var(--text);
+      font-family: "Source Sans Pro", sans-serif;
+    }
+
+    .page {
+      width: min(1200px, 100%);
+      padding: 3rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .card-row {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: linear-gradient(180deg, var(--surface), var(--surface-2));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2rem;
+    }
+
+    .card.front {
+      background: linear-gradient(180deg, #0f0f0f 0%, #171717 100%);
+    }
+
+    .card.back {
+      background: linear-gradient(180deg, #161616 0%, #1e1e1e 100%);
+    }
+
+    .brand {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-family: "Raleway", sans-serif;
+      font-size: clamp(2.2rem, 4vw, 3.6rem);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .brand p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), rgba(212, 175, 55, 0.2));
+      border-radius: 999px;
+      margin: 1rem 0;
+    }
+
+    .details {
+      display: grid;
+      gap: 1rem;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .details strong {
+      display: block;
+      color: var(--text);
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .details span {
+      display: block;
+      line-height: 1.8;
+    }
+
+    .hero-line {
+      position: relative;
+      margin-top: 1.5rem;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .hero-line::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    .back-content {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .back-content h2 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: var(--text);
+      font-family: "Raleway", sans-serif;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .status {
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.21em;
+      text-transform: uppercase;
+      margin-top: 0.5rem;
+    }
+
+    .info-list {
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .info-list div {
+      display: grid;
+      gap: 0.2rem;
+    }
+
+    .info-list span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .note {
+      margin-top: auto;
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 0.86rem;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 900px) {
+      .card-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="card-row">
+      <article class="card front">
+        <div class="brand">
+          <h1>Smiths Detailing</h1>
+          <p>Perfection in Every Detail</p>
+        </div>
+        <div class="divider"></div>
+        <div class="details">
+          <div>
+            <strong>Luxury Exterior Detail</strong>
+            <span>Hand wash · clay bar treatment · one-step paint correction · 1-year ceramic coating</span>
+          </div>
+          <div>
+            <strong>Signature Service</strong>
+            <span>Premium finish for high-end vehicles and collectors.</span>
+          </div>
+        </div>
+        <div class="hero-line"></div>
+      </article>
+
+      <article class="card back">
+        <div class="back-content">
+          <div>
+            <h2>Contact</h2>
+            <div class="status">Mobile Detailing Experts</div>
+          </div>
+          <div class="info-list">
+            <div>
+              <strong>Phone</strong>
+              <span>949-299-8273</span>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <span>info@smithsdetailing.com</span>
+            </div>
+            <div>
+              <strong>Website</strong>
+              <span>smithsdetailing.com</span>
+            </div>
+          </div>
+        </div>
+        <p class="note">A premium card inspired by the site’s dark, luxury styling. Keep design simple, use strong typography, and let the contact details stand out.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>
