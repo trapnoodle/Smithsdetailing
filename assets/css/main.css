@@ -173,7 +173,9 @@ img {
 
 .hero {
   padding: 80px 0 40px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.5), transparent);
+  background:
+    radial-gradient(circle at top left, rgba(184, 148, 90, 0.14), transparent 30%),
+    linear-gradient(180deg, rgba(255,255,255,0.5), transparent);
 }
 
 .hero-inner {
@@ -301,7 +303,7 @@ h3 {
 }
 
 .service-card {
-  background: var(--panel);
+  background: linear-gradient(180deg, #ffffff, #f9f6f3);
   border: 1px solid var(--line);
   border-radius: 22px;
   padding: 30px 24px;
@@ -421,7 +423,7 @@ h3 {
 }
 
 .quote-form {
-  background: var(--panel);
+  background: linear-gradient(180deg, #ffffff, #f8f4ef);
   border: 1px solid var(--line);
   border-radius: 24px;
   padding: 28px;
@@ -446,9 +448,9 @@ select,
 textarea {
   width: 100%;
   margin-top: 8px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(17, 24, 39, 0.12);
   border-radius: 12px;
-  background: var(--panel-alt);
+  background: rgba(255, 255, 255, 0.9);
   padding: 0.9rem 1rem;
   font: inherit;
   color: var(--ink);
